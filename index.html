@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Dave Quah (@Milleus)">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/global.css">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5W6QZZYV2W"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-5W6QZZYV2W');
+  </script>
+</head>
+
+<body>
+  <div class="layout grid">
+    <main>
+      <div class="card grid bg-neutral-100">
+        <div class="illustration" aria-hidden="true">
+          <img src="/assets/illustration-box-desktop.svg" alt="">
+        </div>
+        <div class="faq-section">
+          <h1 class="text-blue-500 fs-900 fw-700 lh-tight">FAQ</h1>
+          <details class="text-neutral-300">
+            <summary class="flex text-neutral-400 fs-500 lh-tight">
+              How many team members can I invite?
+              <img src="/assets/icon-arrow-down.svg" alt="" aria-hidden="true">
+            </summary>
+            You can invite up to 2 additional users on the Free plan. There is no limit on
+            team members for the Premium plan.
+          </details>
+          <details class="text-neutral-300">
+            <summary class="flex text-neutral-400 fs-500 lh-tight">
+              What is the maximum file upload size?
+              <img src="/assets/icon-arrow-down.svg" alt="" aria-hidden="true">
+            </summary>
+            No more than 2GB. All files in your account must fit your allotted storage space.
+          </details>
+          <details class="text-neutral-300">
+            <summary class="flex text-neutral-400 fs-500 lh-tight">
+              How do I reset my password?
+              <img src="/assets/icon-arrow-down.svg" alt="" aria-hidden="true">
+            </summary>
+            Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.
+          </details>
+          <details class="text-neutral-300">
+            <summary class="flex text-neutral-400 fs-500 lh-tight">
+              Can I cancel my subscription?
+              <img src="/assets/icon-arrow-down.svg" alt="" aria-hidden="true">
+            </summary>
+            Yes! Send us a message and we’ll process your request no questions asked.
+          </details>
+          <details class="text-neutral-300">
+            <summary class="flex text-neutral-400 fs-500 lh-tight">
+              Do you provide additional support?
+              <img src="/assets/icon-arrow-down.svg" alt="" aria-hidden="true">
+            </summary>
+            Chat and email support is available 24/7. Phone lines are open during normal business hours.
+          </details>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p class="text-blue-500">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://www.frontendmentor.io/profile/Milleus">Dave Quah (@Milleus)</a>.
+      </p>
+    </footer>
+  </div>
+</body>
+
+</html>
