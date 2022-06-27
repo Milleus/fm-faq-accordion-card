@@ -240,11 +240,19 @@ select {
 }
 
 .faq-section > details summary {
+  /* remove marker for browsers */
   list-style: none;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
   transition: color 200ms ease-in-out;
+}
+
+/* remove marker for browsers */
+.faq-sections > details summary::marker,
+/* remove marker for webkit-based browsers such as Safari */
+.faq-section > details summary::-webkit-details-marker {
+  display: none;
 }
 
 .faq-section > details summary img {
@@ -283,8 +291,7 @@ footer > p {
   .illustration {
     max-width: 24.25rem;
     margin: unset;
-    background-image:
-      url(/assets/illustration-woman-online-desktop.svg),
+    background-image: url(/assets/illustration-woman-online-desktop.svg),
       url(/assets/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
     /* using rem for width so that image scales when font size changes */
@@ -312,7 +319,7 @@ footer > p {
     padding: 4rem 6rem 4rem 5.375rem;
   }
 
-  .faq-section  > h1 {
+  .faq-section > h1 {
     text-align: start;
     margin-bottom: 1.5rem;
   }
