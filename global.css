@@ -214,19 +214,15 @@ select {
 }
 
 .illustration {
+  min-height: 13.25rem;
   width: 100%;
-  aspect-ratio: 1;
-  max-width: 14.8125rem;
-  margin: -8.5rem auto auto;
+  margin: -6.75rem auto auto;
   background-image: url(/assets/illustration-woman-online-mobile.svg),
     url(/assets/bg-pattern-mobile.svg);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top 50% left 50%, bottom 0% left 50%;
-}
-
-.illustration img {
-  display: none;
+  /* using rem for width so that image scales when font size changes */
+  background-size: 14.8125rem auto;
+  background-position: center top 0%, center bottom 0%;
 }
 
 .faq-section {
@@ -274,6 +270,10 @@ footer > p {
 }
 
 @media (min-width: 60em) {
+  .layout {
+    padding: 1rem 4rem;
+  }
+
   .card {
     grid-template-columns: 24.25rem auto;
     margin-top: unset;
@@ -281,25 +281,31 @@ footer > p {
   }
 
   .illustration {
-    height: 100%;
-    max-width: unset;
-    margin: auto;
+    max-width: 24.25rem;
+    margin: unset;
     background-image:
       url(/assets/illustration-woman-online-desktop.svg),
       url(/assets/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
-    background-size: unset;
-    /* prevent image from moving when accordion is expanded */
-    background-position: right 0% top 50%, right 0% top calc(50% - 70px);
+    /* using rem for width so that image scales when font size changes */
+    background-size: 29.5rem auto, 60rem auto;
+    /* using calc so that image does not move when accordion opens (unless scroll bar appears) */
+    background-position: right 0% center, right 0% top calc(50% - 4.75rem);
     position: relative;
   }
 
-  .illustration img {
-    display: block;
+  .illustration::before {
+    content: "";
+    width: 50%;
+    height: 100%;
     position: absolute;
-    top: 50%;
-    left: -24%;
-    transform: translateY(-30%);
+    left: -25%;
+    background-image: url(/assets/illustration-box-desktop.svg);
+    background-repeat: no-repeat;
+    /* using rem for width so that image scales when font size changes */
+    background-size: 11.25rem auto;
+    /* using calc so that image does not move when accordion opens (unless scroll bar appears) */
+    background-position: center top calc(50% + 2.5rem);
   }
 
   .faq-section {
