@@ -23,6 +23,10 @@
   --fs-500: 0.8125rem;
   --fs-900: 2rem;
 
+  --lh-400: 1.5;
+  --lh-500: 1.25;
+  --lh-900: 1.25;
+
   --fw-400: 400;
   --fw-700: 700;
 }
@@ -32,6 +36,7 @@
     --fs-500: 0.875rem;
   }
 }
+
 /* ------------------- */
 /* Reset               */
 /* ------------------- */
@@ -72,7 +77,7 @@ html:focus-within {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  line-height: var(--lh-400);
   font-family: var(--ff-sans);
   font-size: var(--fs-400);
   font-weight: var(--fw-400);
@@ -169,17 +174,19 @@ select {
 
 .fs-500 {
   font-size: var(--fs-500);
+  line-height: var(--lh-500);
 }
 .fs-900 {
   font-size: var(--fs-900);
+  line-height: var(--lh-900);
 }
 
 .fw-700 {
   font-weight: var(--fw-700);
 }
 
-.lh-tight {
-  line-height: 1.25;
+.text-center {
+  text-align: center;
 }
 
 /* ------------------- */
@@ -272,10 +279,6 @@ select {
 
 .faq-section > details[open] summary img {
   transform: rotateZ(180deg);
-}
-
-footer > p {
-  text-align: center;
 }
 
 @media (min-width: 60em) {
