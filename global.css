@@ -156,12 +156,6 @@ select {
 .text-blue-500 {
   color: var(--clr-blue-500);
 }
-.text-red-400 {
-  color: var(--clr-red-400);
-}
-.text-neutral-100 {
-  color: var(--clr-neutral-100);
-}
 .text-neutral-200 {
   color: var(--clr-neutral-200);
 }
